@@ -3,3 +3,5 @@
 西暦と名前を入力するとあなたの運命のラブライブメンバーを占います。
 
 名前と画像を出力するシンプルなアプリです。
+
+https://priceless-rosalind-a9dcfd.netlify.com/
