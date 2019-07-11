@@ -1,0 +1,38 @@
+body {
+    background-color: #FF7CB9;
+    color: #FFE2F2;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    height: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #FFE2E4;
+    border: none;
+    color: #824767;
+}
+
+#assessment-name {
+    text-align: center;
+    font-size: 40px;
+}
+
+#assessment-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
