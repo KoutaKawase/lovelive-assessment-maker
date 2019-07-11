@@ -1,4 +1,3 @@
-// (function () {
 'use strict';
 const members = [
     ['高坂穂乃果', './images/kosaka_honoka.jpg'],
@@ -57,15 +56,22 @@ function assertIdol() {
     //インプットデータ取得
     let year = document.getElementById('user-birthday').value;
     let userName = document.getElementById('user-name').value;
+    //名前表示エリア取得
+    let nameArea = document.getElementById('assessment-name');
+    //イメージエリア取得
     let imgArea = document.getElementById('assessment-image');
+    //シェアボタン取得
+    let shareArea = document.getElementById('share');
     //診断結果取得
     const result = assessment(Number(year), userName);
+    const message = 'あなたの運命のラブライブメンバーは' + result[0] + 'ちゃんです！おめでとう！';
     //名前表示
-    document.getElementById('assessment-name').innerHTML = result[0];
+    nameArea.innerHTML = result[0];
     //画像表示
     imgArea.src = result[1];
+    //シェア用の説明を動的に挿入
+    shareArea.setAttribute("data-text", message);
 }
 
 console.log(assessment(1998, '川瀬康太'));
-// })();
 
